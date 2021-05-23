@@ -31,12 +31,19 @@
     </header>
     <section class="contenido wrapper">
         <h1>Sobre nosotros!</h1>
-        <p>
-            Nos encargamos de hacer autos de alta gama y Formula 1.<br>Los vehículos Mercedes-Benz se han centrado en un elevado grado de calidad y arte en sus diseños.
-        </p>
+        <div class="row">
+          <div class="column column-1">
+            <p class="parrafo izquierda">Los vehículos Mercedes-Benz se han centrado en un elevado grado de calidad y arte en sus diseños. Como resultado, han sido históricamente más caros y fabricados en menor cantidad que otros vehículos más baratos. La compañía ha cultivado cuidadosamente una imagen de superioridad técnica, calidad y servicio en sus diseños, por lo que sus autos han sido frecuentemente la elección de los ricos y famosos. Aunque ha sido más famosa por sus modelos de limusina y sus automóviles de lujo, también han sido construidos por MB un gran número de sobresalientes deportivos.</p>
+            <img class="aboutus-imagen" src="/imagenes/2006_Merces_GL.jpg" alt="">
+          </div>
+          <div class="column column-2">
+              <img class="aboutus-imagen" src="/imagenes/images.jpg" alt="">
+              <p class="parrafo derecha">En 1998 Daimler-Benz, empresa matriz de Mercedes, se fusiona con la firma americana Chrysler creando DaimlerChrysler, dando lugar al tercer grupo automovilístico del mundo. De las sinérgias conjuntas aparecen los primeros modelos modernos de todoterreno de la marca. En 2006 se lanzó el discutido monovolumen R y el SUV de siete plazas Clase GL. Además, también en 1998 Mercedes se hace con el control del preparador AMG que pasa a integrase dentro del grupo Daimler-Benz. Entre 2003 y 2009 Mercedes colabora con McLaren, creando junto el Mercedes-Benz SLR McLaren.</p>
+            </div>
+          </div>     
+        </div>
     </section>
     <button onclick="topFunction()" id="button-toTop" title="Go to top">Top</button>
-        <hr>
         <footer>
         <div class="row">
           <div class="column">
@@ -63,7 +70,7 @@
 </body>
 </html>
 <script>
-    //Get the button:
+ //get the button
   mybutton = document.getElementById("button-toTop");
   
   // When the user scrolls down 20px from the top of the document, show the button

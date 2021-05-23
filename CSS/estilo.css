@@ -1,5 +1,24 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+p.parrafo {
+  width: 75%; }
+
+p.parrafo.izquierda {
+  text-align: left;
+  padding: 0 0 0 150px; }
+
+p.parrafo.derecha {
+  margin-top: 80px;
+  text-align: right;
+  padding: 0; }
+
+img.aboutus-imagen {
+  margin-left: 150px;
+  margin-top: 50px;
+  height: 300px;
+  width: 350px;
+  box-shadow: black 15px 15px 15px; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -126,6 +145,12 @@ nav.stroke ul li a:hover:after {
 h3 {
   text-align: center;
   color: white; }
+
+h4 {
+  width: 50% !important;
+  font-size: 27px;
+  text-align: center;
+  margin: 40px 0 0 26%; }
 
 .container {
   text-align: left;
@@ -277,7 +302,7 @@ h3 {
 .body__title--banner {
   background-image: url(/imagenes/portada.jpg);
   width: 100%;
-  height: 200px;
+  height: 400px;
   color: white;
   font-weight: 400;
   background-attachment: fixed;
