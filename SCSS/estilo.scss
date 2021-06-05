@@ -68,7 +68,7 @@ nav ul li{
     display: inline-block;
 }
 
-nav ul li a {
+nav ul li.item a {
     text-decoration: underline;
     color: white;
     text-decoration: none;
@@ -76,17 +76,17 @@ nav ul li a {
     padding: 15px;
 }
 
-nav ul li a:hover {
+nav ul li.item a:hover {
     color: cyan;
     text-decoration: none;
 }
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+nav ul li.item a,
+nav ul li.item a:after,
+nav ul li.item a:before {
   transition: all .5s;
 }
 
-nav.stroke ul li a:after{
+nav.stroke ul li.item a:after{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -99,10 +99,9 @@ nav.stroke ul li a:after{
   height: 1px;
 }
 
-nav.stroke ul li a:hover:after {
+nav.stroke ul li.item a:hover:after {
   width: 100%;
 }
-
 
 //boton para volver al menú
 #button-toTop{
