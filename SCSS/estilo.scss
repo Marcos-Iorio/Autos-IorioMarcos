@@ -9,7 +9,8 @@ $white : white;
 
 @each $items in itemA, itemB, itemC, itemD, itemE, itemF {
     .#{$items}{
-        text-align: center;
+        align-self: center;
+        justify-self: center;
     } 
 }
 
@@ -137,6 +138,7 @@ h4{
     font-size: 27px;
     text-align: center;
     margin: 40px 0 0 25%;
+    font-weight: 900;
 }
 
 .container {
@@ -291,7 +293,7 @@ h3{
     margin: 50px 0 50px 0;
 }
 .body__title--banner{
-    background-image: url(/imagenes/portada.jpg);
+    background-image: url(/imagenes/portada.jpeg);
     width: 100%;
     height: 400px;
 
@@ -336,7 +338,8 @@ li.logo a img{
     grid-template-rows: 3fr 3fr 3fr ;
     grid-template-columns: 3fr 3fr 3fr ;
     grid-gap: 0em;
-    text-align: center;
+    row-gap: 40px;
+    align-items: center;
  }
 
  .header{
@@ -347,6 +350,9 @@ li.logo a img{
  img#galeria{
      grid-area: galeria;
      border-radius: 10px
+ }
+ img{
+     width: 400px;
  }
  /*scale en galeria*/
  img#galeria:hover{
@@ -384,19 +390,24 @@ li.logo a img{
     }
     #grid{
         display: grid;
-        grid-template-areas: "header header"
-                             "galeria galeria" 
-                             "galeria galeria"
-                             "galeria galeria";
-       grid-template-rows: 3fr 3fr 3fr 3fr ;
-       grid-template-columns: 3fr 3fr ;
+        grid-template-areas: "header"
+                             "galeria" 
+                             "galeria"
+                             "galeria"
+                             "galeria"
+                             "galeria"
+                             "galeria";
+       grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+       grid-template-columns: 3fr ;
        grid-gap: 1em;
+       row-gap: 50px;
     }
     img#galeria{
         grid-area: galeria;
         border-radius: 10px;
-        height: 150px;
-        width: 150px;
+        width: 300px!important;
+        align-items: center;
+        justify-self: center;
     }
  }
 /*Tablet*/
